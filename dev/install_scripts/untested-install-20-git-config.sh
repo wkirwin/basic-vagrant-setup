@@ -1,2 +1,2 @@
-sudo -u vagrant git config --global user.name "Will Kirwin"
-sudo -u vagrant git config --global user.email "william.kirwin@activsion.com"
+sudo -u vagrant git config --global user.name "Your Name"
+sudo -u vagrant git config --global user.email "your.email@theintertubes.net"

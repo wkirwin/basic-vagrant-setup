@@ -11,3 +11,4 @@ vagrant-spark-zeppelin
 license*.txt
 Anaconda*.sh
 .vagrant
+*.un~

@@ -1,0 +1,13 @@
+data
+.ipynb_checkpoints
+*log
+*.pyc
+*.xlsx
+*.png
+elk4pathos
+spark
+ubuntu14.04
+vagrant-spark-zeppelin
+license*.txt
+Anaconda*.sh
+.vagrant

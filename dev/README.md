@@ -35,11 +35,11 @@ install-20-git-config.sh
 
 ### Key vagrant commands
 
-- vagrant up : loads the VM 
-- vagrant ssh : access the VM 
-- vagrant reload --provision : reload the VM with updated settings 
-- vagrant status : Shows the staus of the VM 
-- vagrant suspend : to use it at the same point later 
-- vagrant halt : stops it (power down) 
-- vagrant destroy : deletes it
-- vagrant box update : updates the base box (ubuntu/trusty64)
+- `vagrant up` : loads the VM 
+- `vagrant ssh` : access the VM 
+- `vagrant reload --provision` : reload the VM with updated settings 
+- `vagrant status` : Shows the staus of the VM 
+- `vagrant suspend` : to use it at the same point later 
+- `vagrant halt` : stops it (power down) 
+- `vagrant destroy` : deletes it
+- `vagrant box update` : updates the base box (ubuntu/trusty64)

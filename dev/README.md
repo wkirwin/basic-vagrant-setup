@@ -10,8 +10,6 @@ Move additional install scripts into ./install-scripts and run
 
     vagrant up --provision
 
-If any scripts have been previously run, they will be 
-
 ### Requirements
 
 The various `install-*.sh` scripts require various resources:

@@ -29,6 +29,7 @@ install-03-ipython-nbserver.sh
     .ipython/ipython_notebook_config.py
 
 install-20-git-config.sh
+
     *edit* install-20-git-config.sh with the desired git credentials
 
 
@@ -40,5 +41,4 @@ vagrant status : Shows the staus of the VM
 vagrant suspend : to use it at the same point later 
 vagrant halt : stops it (power down) 
 vagrant destroy : deletes it
-
 vagrant box update : updates the base box (ubuntu/trusty64)

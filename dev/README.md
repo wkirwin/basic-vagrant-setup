@@ -6,7 +6,7 @@ Run
     vagrant up
 
 ### Additional Provisioning
-Move additional install scripts into ./install-scripts and run
+Move additional install scripts into `./install-scripts` and run
 
     vagrant up --provision
 

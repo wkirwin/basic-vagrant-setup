@@ -12,11 +12,8 @@ Move additional install scripts into `./install-scripts` and run
 
 ### Requirements
 
-The various `install-*.sh` scripts require various resources:
-
-- `install-01-anaconda-p27.sh`: `Anaconda-2.3.0-Linux-x86_64.sh` should be in `dev/resources`
 - `install-02-anaconda-accelerate-iopro-license.sh`: `license*.txt` (Continuum license) should be in `dev/resources`
-- `install-20-git-config.sh`: *edit* `install-20-git-config.sh` with the desired git credentials
+- `install-20-git-config.sh`: you should *edit* `install-20-git-config.sh` with the desired git credentials
 
 
 ### Key vagrant commands

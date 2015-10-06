@@ -21,15 +21,15 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Default value: false
   # config.ssh.forward_agent = true
 
-  config.vm.synced_folder("d:/local", "/home/vagrant/local", 
+  config.vm.synced_folder("d:/local", "/home/vagrant/local",
     owner: "vagrant", group: "vagrant", 
     mount_options: ["dmode=775,fmode=664"])
 
-  config.vm.synced_folder("d:/projects", "/home/vagrant/projects", 
-    owner: "vagrant", group: "vagrant", 
-    mount_options: ["dmode=775,fmode=664"])
+  config.vm.synced_folder("d:/projects", "/home/vagrant/projects",
+    owner: "vagrant", group: "vagrant",
+      mount_options: ["dmode=775,fmode=664"])
 
-  config.vm.synced_folder("d:/Stash", "/home/vagrant/stash", 
+  config.vm.synced_folder("d:/Stash", "/home/vagrant/stash",
     owner: "vagrant", group: "vagrant", 
     mount_options: ["dmode=775,fmode=664"])
   
@@ -37,7 +37,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     vb.name = "dev-box"
 
     # boot with headless mode
-    vb.gui = false  
+    vb.gui = false
     # Tweak the below value to adjust RAM
     vb.memory = 12288
     # Tweak the number of processors below

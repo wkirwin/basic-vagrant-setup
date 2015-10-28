@@ -13,3 +13,4 @@ Anaconda*.sh
 .vagrant
 *.un~
 *~
+.ssh

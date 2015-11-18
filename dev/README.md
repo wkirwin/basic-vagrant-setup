@@ -1,11 +1,13 @@
 To install desired components, move the desired script from ./install-scripts into ./install. 
 
 ### Initial Installation
+
 Run 
 
     vagrant up
 
 ### Additional Provisioning
+
 Move additional install scripts into `./install-scripts` and run
 
     vagrant up --provision
@@ -13,16 +15,24 @@ Move additional install scripts into `./install-scripts` and run
 ### Requirements
 
 - `install-02-anaconda-accelerate-iopro-license.sh`: `license*.txt` (Continuum license) should be in `dev/resources`
+
 - `install-20-git-config.sh`: you should *edit* `install-20-git-config.sh` with the desired git credentials
 
 
-### Key vagrant commands
+### Key `vagrant` commands
 
-- `vagrant up` : loads the VM 
-- `vagrant ssh` : access the VM 
-- `vagrant reload --provision` : reload the VM with updated settings 
-- `vagrant status` : Shows the staus of the VM 
-- `vagrant suspend` : to use it at the same point later 
-- `vagrant halt` : stops it (power down) 
+- `vagrant up` : loads the VM
+ 
+- `vagrant ssh` : access the VM
+ 
+- `vagrant reload --provision` : reload the VM with updated settings
+ 
+- `vagrant status` : Shows the staus of the VM
+ 
+- `vagrant suspend` : to use it at the same point later
+ 
+- `vagrant halt` : stops it (power down)
+ 
 - `vagrant destroy` : deletes it
+
 - `vagrant box update` : updates the base box (ubuntu/trusty64)

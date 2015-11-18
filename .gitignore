@@ -14,3 +14,5 @@ Anaconda*.sh
 *.un~
 *~
 .ssh
+.idea
+*.gz

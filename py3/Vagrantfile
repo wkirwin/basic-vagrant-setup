@@ -11,20 +11,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network "private_network", type: "dhcp"  
   
   # IPython notebook port
-  # config.vm.network :forwarded_port, guest: 8888, host: 8888
-
-  # ELK stack ports
-  # config.vm.network :forwarded_port, guest: 9200, host: 9200
-  # config.vm.network :forwarded_port, guest: 2200, host: 22
+  config.vm.network :forwarded_port, guest: 8888, host: 8888
 
   # If true, then any SSH connections made will enable agent forwarding.
   # Default value: false
   # config.ssh.forward_agent = true
 
-  config.vm.synced_folder("d:/local", "/home/vagrant/local",
-    owner: "vagrant", group: "vagrant", 
-    mount_options: ["dmode=775,fmode=664"])
-
+  # this will sync folders in your VM to actual folders on your host machine, modify and copy as needed
   config.vm.synced_folder("d:/projects", "/home/vagrant/projects",
     owner: "vagrant", group: "vagrant",
       mount_options: ["dmode=775,fmode=664"])
@@ -33,23 +26,15 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     owner: "vagrant", group: "vagrant", 
     mount_options: ["dmode=775,fmode=664"])
   
-  config.vm.synced_folder("d:/github", "/home/vagrant/github",
-    owner: "vagrant", group: "vagrant",
-    mount_options: ["dmode=775,fmode=664"])
-
-  config.vm.synced_folder("d:/Docker", "/home/vagrant/docker",
-    owner: "vagrant", group: "vagrant",
-    mount_options: ["dmode=775,fmode=664"])
-
   config.vm.provider "virtualbox" do |vb|
-    vb.name = "dev-box"
+    vb.name = "py3-dev"
 
     # boot with headless mode
     vb.gui = false
     # Tweak the below value to adjust RAM
-    vb.memory = 8192
+    vb.memory = 4096
     # Tweak the number of processors below
-    vb.cpus = 4
+    vb.cpus = 2
 
   end
   config.vm.provision :shell, :path => "bootstrap.sh"

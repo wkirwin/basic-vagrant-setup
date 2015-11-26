@@ -1,0 +1,6 @@
+bottle
+psycopg2
+seaborn
+html5lib
+requests
+pytest

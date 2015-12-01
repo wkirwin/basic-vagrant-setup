@@ -16,3 +16,5 @@ Anaconda*.sh
 .ssh
 .idea
 *.gz
+hosts
+*ATVi*

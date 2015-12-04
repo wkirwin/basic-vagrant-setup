@@ -18,3 +18,5 @@ Anaconda*.sh
 *.gz
 hosts
 *ATVi*
+*.tar
+*.zip

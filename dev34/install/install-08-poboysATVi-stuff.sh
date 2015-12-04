@@ -7,3 +7,7 @@ su vagrant
 /home/vagrant/anaconda/bin/conda config --add channels "https://conda.anaconda.org/ActivisionGameScience"
 
 /home/vagrant/anaconda/bin/conda install python-snappy pytest-docker
+
+# install some data-sciencey stuff
+/home/vagrant/anaconda/bin/conda install psycopg2 seaborn html5lib requests pytest -y
+/home/vagrant/anaconda/bin/pip install cookiecutter bottle

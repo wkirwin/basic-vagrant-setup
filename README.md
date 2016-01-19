@@ -8,22 +8,19 @@ Some basic vagrant files for provisioning an Ubuntu 14.04 VirtualBox with some b
 
 Various additional packages/resources can be installed by copying the relevant script from dev/install-scripts to dev/install. Right now, only the following are included (maybe more to come in the future):
 
-- Anaconda Python 2.7 (plus Accelerate/Iopro if you have a license)
-- set up a IPython notebook server (run with ipython notebook --profile nbserver; located on port 8888)
+- Anaconda Python 2.7, 3.4 or 3.latest (plus Accelerate/Iopro if you have a license)
+- set up a IPython notebook server (Python 2.7 or 3.4) (run with ipython notebook --profile nbserver; located on port 8888)
 - Java JDK 8 (Oracle)
-- ELK Stack dependencies (untested)
-- git config (untested, probably pointless to do via vagrant provisioning)
+- Scala 2.11.7 + SBT 0.13.9
+- Docker (latest, plus start the Docker daemon)
 
 
-First time use:
+Usage:
 
-1. run
+1. (Optional) Download install resources and put them in the resources directory (e.g., Anaconda2-2.4.1-Linux-x86_64.sh).
+Put any other required resources (contents of `~/.ssh`, a `hosts` file, Continuum licences, etc...).
 
-    wget https://3230d63b5fc54e62148e-c95ac804525aac4b6dba79b00b39d1d3.ssl.cf1.rackcdn.com/Anaconda-2.3.0-Linux-x86_64.sh dev/resources
-
-and, if you have one, copy your Continuum license into dev/resources.
-
-2. Copy desired install scripts from dev/install-scripts to dev/install.
+2. Copy desired install scripts from `./install-scripts` to `./install`.
 
 3. Edit `Vagrantfile` to sync your desired local directories to the corresponding directory in the VM.
 

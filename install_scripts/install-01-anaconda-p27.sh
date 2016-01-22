@@ -16,4 +16,4 @@ echo "export PATH=/home/vagrant/anaconda/bin:\$PATH" >> /home/vagrant/.bashrc
 
 # some bullshit here
 sudo chown -R vagrant:vagrant /home/vagrant/anaconda
-sudo chown -R vagrang:vagrant /home/vagrant/.ipython
+sudo chown -R vagrant:vagrant /home/vagrant/.ipython

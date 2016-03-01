@@ -6,6 +6,7 @@ sudo apt-get install tmux -y
 sudo apt-get install htop -y
 sudo apt-get install zsh -y
 sudo apt-get install build-essential -y
+sudo apt-get install curl -y
 
 # for seamless mode:
 #  1. set vb.gui = true in Vagrant file
@@ -25,3 +26,8 @@ if [ -d /vagrant/resources/.ssh ]; then
     su vagrant
     cp -r /vagrant/resources/.ssh /home/vagrant/.ssh
 fi
+
+# install httpie
+sudo curl --silent https://bootstrap.pypa.io/get-pip.py | sudo python3
+sudo pip install --upgrade httpie
+

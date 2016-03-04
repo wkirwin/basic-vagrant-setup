@@ -15,3 +15,4 @@ echo "export PATH=/home/vagrant/anaconda/bin:\$PATH" >> /home/vagrant/.bashrc
 /home/vagrant/anaconda/bin/conda update conda -y
 
 sudo chown -R vagrant:vagrant /home/vagrant/anaconda
+

@@ -14,5 +14,8 @@ echo "export PATH=/home/vagrant/anaconda/bin:\$PATH" >> /home/vagrant/.bashrc
 
 /home/vagrant/anaconda/bin/conda update conda -y
 
-# some bullshit here
 sudo chown -R vagrant:vagrant /home/vagrant/anaconda
+
+mkdir /home/vagrant/.jupyter
+cp /vagrant/resources/ipython_notebook_config.py /home/vagrant/.jupyter/jupyter_notebook_config.py
+

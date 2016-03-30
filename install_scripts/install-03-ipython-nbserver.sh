@@ -14,3 +14,6 @@ if [ -f $IPYTHON_CONFIG_FILE ]; then
 fi
 
 sudo chown -R vagrant:vagrant /home/vagrant/.ipython
+
+sudo cp /vagrant/resources/ipython-notebook.conf /etc/init
+sudo service ipython-notebook start

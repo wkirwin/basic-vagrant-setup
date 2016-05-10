@@ -2,13 +2,13 @@
 
 su vagrant
 
-ANACONDA_FILE = 'Anaconda2-2.4.1-Linux-x86_64.sh'
-if [ ! -f /vagrant/resources/$ANACONDA_FILE ];
+export ANACONDA_FILE="Anaconda2-4.0.0-Linux-x86_64.sh"
+if [ ! -f /vagrant/resources/${ANACONDA_FILE} ];
 then
-    wget -P /vagrant/resources/ https://repo.continuum.io/archive/$ANACONDA_FILE
+    wget -P /vagrant/resources/ https://repo.continuum.io/archive/${ANACONDA_FILE}
 fi
 
-bash $ANACONDA_FILE -b -p /home/vagrant/anaconda
+bash /vagrant/resources/$ANACONDA_FILE -b -p /home/vagrant/anaconda
 echo "export PATH=/home/vagrant/anaconda/bin:\$PATH" >> /home/vagrant/.zshrc
 echo "export PATH=/home/vagrant/anaconda/bin:\$PATH" >> /home/vagrant/.bashrc
 

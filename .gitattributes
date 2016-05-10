@@ -1,0 +1,8 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=lf
+
+# Set sh files to always be unix line endings
+*.sh text eol=lf
+*.py text eol=lf
+*.condarc text eol=lf
+*.list text eol=lf
